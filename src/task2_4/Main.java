@@ -4,6 +4,8 @@
 
 package task2_4;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -18,10 +20,13 @@ public class Main {
         System.out.println();
         logic.getScore(); //реализовывет поиск счетов
         System.out.println();
-        logic.getSortScores(); //сортирует счета
-        System.out.println();
         logic.sumOfScores(); //считает сумму всех счетов
         System.out.println();
         logic.separateSumOfScores(); // считает сумму отрицательных и положительных по балансу счетов.
+        System.out.println();
+        List<Score> listSortByName = logic.getSortScores();  //сортирует счета
+        for (Score c : listSortByName) {
+            System.out.println(c);
+        }
     }
 }

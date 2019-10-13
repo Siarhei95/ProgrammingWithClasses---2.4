@@ -17,6 +17,7 @@ public class Score {
         return balance;
     }
     public String toString() {
-        return String.format("%d\t scoreName: %s\t balance: ", scoreName, balance);
+
+        return String.format("scoreName: %s\t balance: %s\t", scoreName, balance);
     }
 }
